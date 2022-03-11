@@ -5,8 +5,8 @@
 /**
  * main - Entry
  *
- * Description: Assign a random number and print whether
- * it is positive, negative or zero
+ * Description: Prints the last digit of n and determines if it is
+ * greater than 5, equal to 0, or less than 6 but not equal to 0
  *
  * Return: returns 0 (Success)
  */
