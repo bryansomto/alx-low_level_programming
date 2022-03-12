@@ -5,7 +5,7 @@
  *
  * Description: print all possible combo of two 2-digit numbers
  *
- * Return 0
+ * Return: 0
  */
 
 int main(void)
@@ -31,7 +31,7 @@ int main(void)
 				putchar(c + '0');
 				putchar(d + '0');
 
-				if (a != 9 && b != 8)
+				if (!(a == 9 && b == 8))
 				{
 					putchar(',');
 					putchar(' ');
@@ -39,6 +39,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
