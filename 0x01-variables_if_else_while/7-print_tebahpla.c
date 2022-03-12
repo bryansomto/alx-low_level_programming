@@ -3,7 +3,7 @@
 /**
  * main - entry
  *
- * Description: print lowercase alphabets in reverse
+ * Description: print lowercase alphabets in reverse and a newline
  *
  * Return: returns 0
  */
@@ -18,5 +18,6 @@ int main(void)
 		putchar(ch);
 		ch--;
 	} while (ch >= 'a');
+	putchar('\n');
 	return (0);
 }
