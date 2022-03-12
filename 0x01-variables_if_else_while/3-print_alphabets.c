@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: Print all letters of the alphabets using putchar()
- * 		letters are printed in lower and upper cases
+ *		letters are printed in lower and upper cases
  *
  * Return: program returns 0 (Success)
  */
@@ -21,7 +21,7 @@ int main(void)
 		putchar(ch);
 		ch++;
 	} while (ch <= 'z');
-	
+
 	do {
 		putchar(CH);
 		CH++;
