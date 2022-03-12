@@ -12,6 +12,7 @@
 int main(void)
 {
 	char ch;
+	char CH;
 
 	ch = 'a';
 	CH = 'A';
@@ -23,6 +24,7 @@ int main(void)
 	
 	do {
 		putchar(CH);
+		CH++;
 	} while (CH <= 'Z');
 
 	putchar('\n');
