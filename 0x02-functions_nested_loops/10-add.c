@@ -2,6 +2,10 @@
 
 /**
  * add - adds two integers
+ *
+ * @i: int param1
+ * @j: int param2
+ *
  * Return: returns the added value
  */
 
