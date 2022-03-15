@@ -1,15 +1,20 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Prints _putchar followed by a new line character
- *
- * Return: zero (0) success
+ * main - a program that prints _putchar, followed by a new line.
+ * Return: zero (Success)
  */
 
 int main(void)
 {
-	_putchar("_putchar");
-	_putchar("\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
