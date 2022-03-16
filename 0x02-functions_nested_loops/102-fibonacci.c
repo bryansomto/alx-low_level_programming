@@ -1,33 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - prints the first 50 Fibonacci numbers
- * starting with 1 & 2
+ * main - Prints first 50 Fibonacci numbers, starting with 1 and 2,
+ *        separated by a comma followed by a space.
  *
- * Return: 0
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	int x;
-	unsigned long f1, f2, sum;
+	int count;
+	unsigned long f1 = 0, f2 = 1, sum;
 
-	f1 = 0;
-	f2 = 0;
-
-	for (x = 0; x < 50; x++)
+	for (count = 0; count < 50; count++)
 	{
 		sum = f1 + f2;
 		printf("%lu", sum);
+
 		f1 = f2;
 		f2 = sum;
-		if (x == 49)
-			putchar('\n');
+
+		if (count == 49)
+			printf("\n");
 		else
-		{
-			putchar(',');
-			putchar(' ');
-		}
+			printf(", ");
 	}
+
 	return (0);
 }
