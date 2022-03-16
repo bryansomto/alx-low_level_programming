@@ -24,7 +24,10 @@ int main(void)
 		if (x == 49)
 			putchar('\n');
 		else
-			putchar(', ');
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	return (0);
 }
