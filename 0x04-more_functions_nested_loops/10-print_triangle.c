@@ -14,12 +14,12 @@ void print_triangle(int size)
 		for (i = 1; i <= size; i++)
 		{
 			/* @k accounts for spaces */
-			for (k = 0; k <= (size - i); k++)
+			for (k = i; k < size; k++)
 			{
 				_putchar(' ');
 			}
 			/* @j accounts for # */
-			for (j = 0; j <= (size - k); j++)
+			for (j = 1; j <= i; j++)
 			{
 				_putchar('#');
 			}
