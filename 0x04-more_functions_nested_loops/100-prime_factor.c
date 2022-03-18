@@ -8,32 +8,27 @@
  */
 int main(void)
 {
-	long long int n;
-	long int max;
-	long int i;
+	long int i, j, m, n;
 
-	n = 612852475143;
-	max = -1;
+	m = 1231952;
+	n = m / 2;
+	j = i / 2;
 
-	while (n % 2 == 0)
+	for (i = 2; i <= n; i++)
 	{
-		max = 2;
-		n /= 2;
-	}
-
-	for (i = 3; i <= sqrt(n); i = i + 2)
-	{
-		while (n % i == 0)
+		if (m % i == 0)
 		{
-			max = i;
-			n = n / i;
+			for (j = (i / 2); j >= 2; j--)
+			{
+				// if (!(i % j == 0 || i % j != 0))
+				// {
+					// printf("%ld/%ld ", i,j);
+					printf("%ld, ", (i/j));
+					// break;
+				// }
+			}
 		}
 	}
-
-	if (n > 2)
-		max = n;
-
-	printf("%ld\n", max);
 
 	return (0);
 }
