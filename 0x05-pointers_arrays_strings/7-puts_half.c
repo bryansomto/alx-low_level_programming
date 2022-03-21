@@ -2,7 +2,7 @@
 
 /**
  * puts_half - prints half of a string, followed by a new line
- * @str: str pointer
+ * @s: str pointer
  */
 int strLen(char *s);
 
@@ -18,7 +18,6 @@ void puts_half(char *str)
 		{
 			_putchar(*(str + i));
 		}
-		_putchar('\n');
 	}
 	else
 	{
@@ -26,6 +25,6 @@ void puts_half(char *str)
 		{
 			_putchar(*(str + (i + 1)));
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
