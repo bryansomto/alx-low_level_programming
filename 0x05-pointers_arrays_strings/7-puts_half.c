@@ -2,9 +2,8 @@
 
 /**
  * puts_half - prints half of a string, followed by a new line
- * @s: str pointer
+ * @str: str pointer
  */
-int strLen(char *s);
 
 void puts_half(char *str)
 {
