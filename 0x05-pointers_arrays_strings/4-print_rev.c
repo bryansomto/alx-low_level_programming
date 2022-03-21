@@ -6,22 +6,14 @@
  * @s: pointer to string value
  * Return: void
  */
-int count(char s);
+
 void print_rev(char *s)
 {
-	int i, j;
+	int i;
 
-	j = count(*s);
-	for (i = (j - 1); i >= 0; i--)
+	for (i = 0; *(s + i) != 0; i++)
+		;
+	for (i = i - 1; i >= 0; i--)
 		_putchar(*(s + i));
 	_putchar('\n');
-}
-int count(char s)
-{
-	int i;
-	
-	i = 0;
-	while (s != '\0')
-		i++;
-	printf("%d", i);
 }
