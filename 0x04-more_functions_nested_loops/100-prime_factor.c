@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	long int x, i, pf;
+	long long int x, i, pf;
 
-	pf = -1;
+	// pf = -1;
 	x = 612852475143;
 
 	while (x % 2 == 0)
