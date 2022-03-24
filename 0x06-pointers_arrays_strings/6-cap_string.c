@@ -9,37 +9,24 @@
  */
 char *cap_string(char *str)
 {
-	int i, j, k;
+	int count = 0, i;
+	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	for (i = 0; str[i] != '\0'; i++)
+	if (*(s + count) >= 97 && *(s + count) <= 122)
+		*(s + count) = *(s + count) - 32;
+	count++;
+	while (*(s + count) != '\0')
 	{
-		if (str[i] == '\t')
-			str[i] = ' ';
-		if (str[i] == ' '  || str[i] == '.')
+		for (i = 0; i < 13; i++)
 		{
-			i++;
-			if (str[i] == '\n')
+			if (*(s + count) == sep_words[i])
 			{
-				i++;
-				for (j = 'a', k = 'A'; j <= 'z' && k <= 'Z'; j++, k++)
-				{
-					if (str[i] == j)
-						str[i] = k;
-					else
-						str[i] = str[i];
-				}
-			}
-			else
-			{
-				for (j = 'a', k = 'A'; j <= 'z' && k <= 'Z'; j++, k++)
-				{
-					if (str[i] == j)
-						str[i] = k;
-					else
-						str[i] = str[i];
-				}
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+					*(s + (count + 1)) = *(s + (count + 1)) - 32;
+				break;
 			}
 		}
+		count++;
 	}
-	return (str);
+	return (s);
 }
