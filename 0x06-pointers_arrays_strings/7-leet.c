@@ -9,7 +9,7 @@
  */
 char *leet(char *str)
 {
-	int i, j, k;
+	int i, j;
 	char val[] = "43071";
 	char alpha[] = "aeotl";
 	char ALPHA[] = "AEOTL";
