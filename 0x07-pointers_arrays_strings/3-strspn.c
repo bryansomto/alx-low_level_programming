@@ -23,6 +23,8 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
+		if (count == 1)
+			break;
 	}
 	return (count);
 }
