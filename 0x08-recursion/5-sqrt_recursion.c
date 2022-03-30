@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - sqrt recursive function
+ * _sqrt - sqrt recursive function
  * @n: square root of number to be returned
  * @i: integer incrementer
  * Return: square root of n
