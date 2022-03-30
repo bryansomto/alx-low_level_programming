@@ -9,7 +9,7 @@ char _myStrlen(char *p)
 {
 	if (!*p)
 		return (0);
-	return (1 + _myStrlen(++p));
+	return (1 + _myStrlen(p + 1));
 }
 /**
  * p1 - string iterator
