@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		printf("%d\n", 10);
 	else if (atoi(argv[1]) > 550 && atoi(argv[1]) <= 10000)
 		printf("%d\n", 25);
-	else if (atoi(argv[1]) < 0)
+	else if (atoi(argv[1]) < 10)
 		printf("%d\n", 0);
 	return (0);
 }
