@@ -1,0 +1,9 @@
+# ignore executable files
+*.exe
+
+#ignore all main files
+*-main.c
+
+#ignore practice files/folder
+prac-*
+/practice
