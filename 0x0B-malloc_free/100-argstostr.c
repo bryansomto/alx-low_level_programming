@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat - a function that concatenates two strings
+ * argstostr - a function that concatenates two strings
  *
  * @ac: args count
  * @av: double pointer to array of size ac
