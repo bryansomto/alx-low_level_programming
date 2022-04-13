@@ -3,6 +3,7 @@
 
 #ignore all main files
 *-main.c
+!3-main.c
 
 #ignore practice files
 prac-*
