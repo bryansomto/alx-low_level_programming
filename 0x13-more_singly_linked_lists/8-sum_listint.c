@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - returns the sum of all the data (n) of a listint_t linked list
+ * sum_listint - sums all data (n) of a listint_t linked list
  *
  * @head: address to linked list
  *
@@ -14,13 +14,10 @@ int sum_listint(listint_t *head)
 
 	if (head == NULL)
 		return (0);
-	else
+	for (i = 0; head != NULL; i++)
 	{
-		for (i = 0; head != NULL; i++)
-		{
-			sum += head->n;
-			head = head->next;
-		}
+		sum += head->n;
+		head = head->next;
 	}
 	return (sum);
 }
