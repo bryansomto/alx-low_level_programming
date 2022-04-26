@@ -1,0 +1,3 @@
+#ignore .exe and main files
+*.exe
+*main.c
