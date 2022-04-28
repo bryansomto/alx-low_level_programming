@@ -1,3 +1,6 @@
 #ignore .exe and main files
 *.exe
 *main.c
+
+#ignore _putchar.c file
+_putchar.c
