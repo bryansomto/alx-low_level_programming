@@ -1,0 +1,11 @@
+#ignore all exe files
+*.exe
+
+#ignore _putchar files
+_putchar.c
+
+#ignore all main/test files
+*-main.c
+
+#ignore text file
+*.txt
