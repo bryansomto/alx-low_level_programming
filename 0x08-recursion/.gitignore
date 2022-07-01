@@ -4,5 +4,6 @@
 #ignore all main files
 *-main.c
 
-#ignore practice files
+#ignore practice files/folder
 prac-*
+/practice
