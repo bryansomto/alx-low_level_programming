@@ -3,6 +3,7 @@
 Defines an island perimeter measuring function.
 """
 
+
 def island_perimeter(grid):
     """
     Return the perimeter of the island.
@@ -28,4 +29,3 @@ def island_perimeter(grid):
                 if (i > 0 and grid[i - 1][j] == 1):
                     edges += 1
     return size * 4 - edges * 2
-
